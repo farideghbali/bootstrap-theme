@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Poppins-regular";
+    font-weight: 400;
+    src: url("./font/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Merriweather-regular";
+    font-weight: 400;
+    src: url("./font/Merriweather-Regular.ttf") format("truetype");
+}
+/*@font-face {*/
+/*    font-family: "Merriweather-bold";*/
+/*    font-weight: 700;*/
+/*    src: url("./font/Merriweather-Bold.ttf") format("truetype");*/
+/*}*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Merriweather, sans-serif !important;
+    line-height: 1.5em;
+}
+
+p, a {
+    font-family: Poppins, sans-serif !important;
+}
+
+.masthead {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead.jpg"), no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.portfolio-caption {
+    transition: all .3s ease-in-out;
+}
+
+.portfolio-box:hover .portfolio-caption {
+    opacity: 1 !important;
+}
+
+.form-control:focus, input:focus, textarea:focus, select:focus {
+    border-color: rgba(220, 53, 69, 75%);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 25%);
+}
+
+.form-control, input, textarea, select {
+    font-family: Poppins sans-serif;
+}
+
+@media (min-width: 425px) {
+    .masthead h1 {
+        font-size: 3rem !important;
+    }
+
+    .navbar {
+        background-color: transparent !important;
+    }
+
+    .navbar-shirink {
+        background-color: white !important;
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%)
+    }
+
+    .navbar-shirink .navbar-brand, .navbar-shirink .nav-link {
+        color: rgb(33, 37, 41) !important;
+    }
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+    }
+    .nav-link{
+            padding-top: 0;
+            padding-bottom: 0;
+    }
+}
